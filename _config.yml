@@ -1,3 +1,5 @@
 title: IFSC Finder
 description: Find IFSC codes for Indian banks
 theme: minima
+plugins:
+  - generate_bank_pages

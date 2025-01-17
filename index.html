@@ -1,0 +1,13 @@
+---
+layout: default
+title: Home
+---
+
+<h2>Banks</h2>
+<ul>
+  {% for page in site.pages %}
+    {% if page.layout == 'bank' %}
+      <li><a href="{{ page.url }}">{{ page.bank_name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

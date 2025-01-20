@@ -4,7 +4,7 @@ layout: default
 
 <h2>{{ page.bank_name }}</h2>
 <ul>
-  {% for code in site.data.ifsc_codes %}
+  {% for code in page.ifsc_codes %}
     <li>{{ code.IFSC }} - {{ code.Add1 }}, {{ code.City }}, {{ code.State }}</li>
   {% endfor %}
 </ul>
